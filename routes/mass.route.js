@@ -7,6 +7,6 @@ const upload = require('../multer')
 
 router.route('/').get(auth,refresh)
 router.route('/home').get(auth,indexPage)
-router.route('/contact-us').gey(auth,getPazz)
+router.route('/contact-us').get(auth,getPazz)
 
 module.exports = router
